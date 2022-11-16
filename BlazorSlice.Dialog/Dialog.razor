@@ -1,0 +1,14 @@
+﻿@if (!IsInline)
+{
+    <FocusTrap DefaultFocus="@DefaultFocus">
+        <div @attributes="@UserAttributes" class="@ContentClass" style="@ContentStyle">
+            @DialogContent
+        </div>
+        @if (DialogActions != null)
+        {
+            <div class="@ActionClass">
+                @DialogActions
+            </div>
+        }
+    </FocusTrap>
+}

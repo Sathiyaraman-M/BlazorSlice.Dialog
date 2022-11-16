@@ -1,0 +1,32 @@
+﻿<div class="modal-backdrop show"></div>
+<div @attributes="@UserAttributes" id="@_elementId" class="modal modal-blur fade show" style="display: block; border: #363636"
+     role="dialog" aria-modal="true" tabindex="-1">
+    <div id="_@Id.ToString("N")" role="document" class="@ClassName" style="@Style">
+        <div class="modal-content">
+            @if (!NoHeader)
+            {
+                <div class="modal-header">
+                    @if (TitleContent == null)
+                    {
+                        <h3 class="modal-title">@Title</h3>
+                    }
+                    else
+                    {
+                        @TitleContent
+                    }
+                    @if (CloseButton)
+                    {
+                        <ArcButton Class="btn-close" data-bs-dismiss="modal" aria-label="Close"></ArcButton>
+                    }
+                </div>
+            }
+            <CascadingValue Value="@this" IsFixed>
+                @Content
+            </CascadingValue>
+        </div>
+    </div>
+</div>
+
+@code {
+    
+}

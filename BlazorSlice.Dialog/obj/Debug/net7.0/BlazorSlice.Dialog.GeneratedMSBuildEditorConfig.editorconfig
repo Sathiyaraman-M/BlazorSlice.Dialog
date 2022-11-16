@@ -1,0 +1,37 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = BlazorSlice.Dialog
+build_property.RootNamespace = BlazorSlice.Dialog
+build_property.ProjectDir = D:\DotNet\BlazorSlice.Dialog\BlazorSlice.Dialog\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\DotNet\BlazorSlice.Dialog\BlazorSlice.Dialog
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/DotNet/BlazorSlice.Dialog/BlazorSlice.Dialog/Dialog.razor]
+build_metadata.AdditionalFiles.TargetPath = RGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DotNet/BlazorSlice.Dialog/BlazorSlice.Dialog/DialogInstance.razor]
+build_metadata.AdditionalFiles.TargetPath = RGlhbG9nSW5zdGFuY2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DotNet/BlazorSlice.Dialog/BlazorSlice.Dialog/DialogProvider.razor]
+build_metadata.AdditionalFiles.TargetPath = RGlhbG9nUHJvdmlkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DotNet/BlazorSlice.Dialog/BlazorSlice.Dialog/MessageBox.razor]
+build_metadata.AdditionalFiles.TargetPath = TWVzc2FnZUJveC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DotNet/BlazorSlice.Dialog/BlazorSlice.Dialog/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

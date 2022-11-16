@@ -1,0 +1,66 @@
+﻿<Dialog @attributes="@UserAttributes">
+    <TitleContent>
+        @if (TitleContent == null)
+        {
+            <h3 class="modal-title">@Title</h3>
+        }
+        else
+        {
+            @TitleContent
+        }
+    </TitleContent>
+    <DialogContent>
+        @if(MessageContent != null)
+        {
+            @MessageContent
+        }
+        else
+        {
+            @MarkupMessage
+            @Message
+        }
+    </DialogContent>
+    <DialogActions>
+        <div tabindex="-1" @onkeydown="@HandleKeyDown">
+            <FocusTrap DefaultFocus="@DefaultFocus.LastChild" Class="d-flex">
+                <div class="ms-2">
+                    @if (CancelButton != null)
+                    {
+                        <CascadingValue Value="@_cancelCallback">
+                            @CancelButton
+                        </CascadingValue>
+                    }
+                    else if (!string.IsNullOrWhiteSpace(CancelText))
+                    {
+                        <button class="btn btn-ghost"  @onclick="@OnCancelClicked">@CancelText</button>
+                    }
+                </div>
+                <div class="ms-2">
+                    @if (NoButton != null)
+                    {
+                        <CascadingValue Value="@_noCallback">
+                            @NoButton
+                        </CascadingValue>
+                    }
+                    else if (!string.IsNullOrWhiteSpace(NoText))
+                    {
+                        <button  class="btn btn-outline"  @onclick="@OnNoClicked">@NoText</button>
+                    }
+                </div>
+                <div class="ms-2">
+                    @if (YesButton != null)
+                    {
+                        <CascadingValue Value="@_yesCallback">
+                            @YesButton
+                        </CascadingValue>
+                    }
+                    else if (!string.IsNullOrWhiteSpace(YesText))
+                    {
+                        <button class="btn btn-primary" @onclick="@OnYesClicked">@YesText</button>
+                    }
+                </div>
+            </FocusTrap>
+        </div>
+        
+    </DialogActions>
+</Dialog>

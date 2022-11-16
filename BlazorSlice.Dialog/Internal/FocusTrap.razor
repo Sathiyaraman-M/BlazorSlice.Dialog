@@ -1,0 +1,33 @@
+﻿<div class="@Class" style="@Style" @attributes="@UserAttributes" @ref="_root" tabindex="-1"
+     @onkeydown="@OnRootKeyDown" @onkeyup="@OnRootKeyUp" @onfocus="@OnRootFocusAsync">
+     
+     <div style="position: fixed; pointer-events: none"
+          tabindex="@TrapTabIndex"
+          @onfocus="OnTopFocusAsync">
+     </div>
+
+     <div @ref="_firstBumper"
+          style="position: fixed; pointer-events: none"
+          tabindex="@TrapTabIndex"
+          @onfocus="OnBumperFocusAsync">
+     </div>
+
+     <div @ref="_fallback"
+          style="position: fixed; pointer-events: none"
+          tabindex="-1">
+     </div>
+
+     @ChildContent
+
+     <div @ref="_lastBumper"
+          style="position: fixed; pointer-events: none"
+          tabindex="@TrapTabIndex"
+          @onfocus="OnBumperFocusAsync">
+     </div>
+
+     <div style="position: fixed; pointer-events: none"
+          tabindex="@TrapTabIndex"
+          @onfocus="OnBottomFocusAsync">
+     </div>
+
+</div>
